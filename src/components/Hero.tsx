@@ -44,7 +44,7 @@ const Hero = () => {
           We're getting married
         </p>
         <h1 className="font-script text-5xl sm:text-7xl md:text-8xl text-background mb-4">
-          Rediet & Partner
+          Paul & Hella
         </h1>
         <div className="w-24 h-px bg-secondary mx-auto my-6" />
         <p className="text-background/90 font-body text-sm tracking-[0.2em] uppercase mb-2">
