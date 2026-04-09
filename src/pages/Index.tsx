@@ -28,7 +28,7 @@ const Index = () => (
     <RSVPForm />
     <RSVPMarquee />
     <GuestPhotos />
-    <GuestInfo />
+  
     <Quote />
     <Footer />
   </>

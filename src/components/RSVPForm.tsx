@@ -2,21 +2,55 @@ import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Heart } from "lucide-react";
 
+const API_URL =
+  "https://apiinv.newblossomequb.net/api/rsvp";
+
 const RSVPForm = () => {
   const { ref, isVisible } = useScrollAnimation();
+
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   const [form, setForm] = useState({
     name: "",
-    email: "",
-    phone: "",
     attending: "yes",
-    guests: "1",
-    message: "",
+    wish: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    setLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          name: form.name,
+          attending: form.attending,
+          wish: form.wish,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit RSVP");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      console.error(err);
+      setError(
+        "Something went wrong. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass =
@@ -28,77 +62,110 @@ const RSVPForm = () => {
         <div
           ref={ref}
           className={`text-center mb-12 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-6"
           }`}
         >
-          <span className="font-script text-3xl text-secondary">Be Our Guest</span>
-          <h2 className="font-heading text-3xl md:text-4xl text-foreground mt-2">RSVP</h2>
+          <span className="font-script text-3xl text-secondary">
+            Be Our Guest
+          </span>
+
+          <h2 className="font-heading text-3xl md:text-4xl text-foreground mt-2">
+            RSVP
+          </h2>
+
           <div className="w-16 h-px bg-secondary mx-auto mt-4" />
         </div>
 
         {submitted ? (
           <div className="text-center animate-fade-up card-wedding p-12">
-            <Heart className="mx-auto text-secondary mb-4" size={48} />
-            <h3 className="font-heading text-2xl text-foreground mb-2">Thank You!</h3>
+            <Heart
+              className="mx-auto text-secondary mb-4"
+              size={48}
+            />
+
+            <h3 className="font-heading text-2xl text-foreground mb-2">
+              Thank You!
+            </h3>
+
             <p className="text-muted-foreground font-body text-sm">
-              We can't wait to celebrate with you.
+              Your response has been received.
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="card-wedding p-8 space-y-5">
+          <form
+            onSubmit={handleSubmit}
+            className="card-wedding p-8 space-y-5"
+          >
+            {/* Name */}
             <input
               type="text"
               placeholder="Full Name"
               required
               value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  name: e.target.value,
+                })
+              }
               className={inputClass}
             />
-            <input
-              type="email"
-              placeholder="Email Address"
-              required
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
+
+            {/* Attending */}
+            <select
+              value={form.attending}
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  attending: e.target.value,
+                })
+              }
               className={inputClass}
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              value={form.phone}
-              onChange={(e) => setForm({ ...form, phone: e.target.value })}
-              className={inputClass}
-            />
-            <div className="grid grid-cols-2 gap-4">
-              <select
-                value={form.attending}
-                onChange={(e) => setForm({ ...form, attending: e.target.value })}
-                className={inputClass}
-              >
-                <option value="yes">Joyfully Accept</option>
-                <option value="no">Regretfully Decline</option>
-              </select>
-              <select
-                value={form.guests}
-                onChange={(e) => setForm({ ...form, guests: e.target.value })}
-                className={inputClass}
-              >
-                {[1, 2, 3, 4, 5].map((n) => (
-                  <option key={n} value={n}>
-                    {n} Guest{n > 1 ? "s" : ""}
-                  </option>
-                ))}
-              </select>
-            </div>
+            >
+              <option value="yes">
+                Joyfully Accept
+              </option>
+
+              <option value="no">
+                Regretfully Decline
+              </option>
+            </select>
+
+            {/* Wish */}
             <textarea
-              placeholder="Leave a message for the couple..."
+              placeholder="Leave your wishes for the couple..."
               rows={4}
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-              className={inputClass + " resize-none"}
+              required
+              value={form.wish}
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  wish: e.target.value,
+                })
+              }
+              className={
+                inputClass + " resize-none"
+              }
             />
-            <button type="submit" className="btn-gold-filled w-full">
-              Confirm Attendance
+
+            {/* Error */}
+            {error && (
+              <p className="text-red-500 text-sm">
+                {error}
+              </p>
+            )}
+
+            {/* Submit */}
+            <button
+              type="submit"
+              disabled={loading}
+              className="btn-gold-filled w-full"
+            >
+              {loading
+                ? "Submitting..."
+                : "Confirm Attendance"}
             </button>
           </form>
         )}

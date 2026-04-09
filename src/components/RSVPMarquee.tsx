@@ -1,19 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, MessageSquare } from "lucide-react";
 
-const sampleMessages = [
-  { name: "Abebe Kebede", message: "So happy for you both! Can't wait to celebrate! 🎉" },
-  { name: "Sara Tekle", message: "Wishing you a lifetime of love and happiness! ❤️" },
-  { name: "Daniel Hailu", message: "Congratulations! This will be the most beautiful day!" },
-  { name: "Meron Assefa", message: "So blessed to witness your union. Love you both!" },
-  { name: "Yonas Berhane", message: "May God bless your marriage forever! 🙏" },
-  { name: "Helen Tadesse", message: "Counting down the days! So excited for you two!" },
-];
-
-const duplicated = [...sampleMessages, ...sampleMessages];
+interface RSVP {
+  name: string;
+  wish: string;
+}
 
 const RSVPMarquee = () => {
+  const [messages, setMessages] = useState<RSVP[]>([]);
   const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    // Fetch messages from backend
+    const fetchMessages = async () => {
+      try {
+      const res = await fetch("https://apiinv.newblossomequb.net/api/rsvp");
+        if (!res.ok) throw new Error("Failed to fetch messages");
+        const data: RSVP[] = await res.json();
+        setMessages(data.reverse()); // show newest first
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetchMessages();
+  }, []);
+
+  // Duplicate for marquee scrolling effect
+  const duplicated = [...messages, ...messages];
 
   return (
     <section className="py-12 bg-background overflow-hidden">
@@ -34,7 +47,7 @@ const RSVPMarquee = () => {
             >
               <p className="font-heading text-sm text-foreground mb-2">{item.name}</p>
               <p className="font-body text-xs text-muted-foreground leading-relaxed italic">
-                "{item.message}"
+                "{item.wish}"
               </p>
             </div>
           ))}
@@ -71,12 +84,13 @@ const RSVPMarquee = () => {
                 <X size={20} />
               </button>
             </div>
+
             <div className="space-y-4">
-              {sampleMessages.map((item, i) => (
+              {messages.map((item, i) => (
                 <div key={i} className="border-b border-muted pb-4 last:border-0">
                   <p className="font-heading text-base text-foreground">{item.name}</p>
                   <p className="font-body text-sm text-muted-foreground mt-1 italic">
-                    "{item.message}"
+                    "{item.wish}"
                   </p>
                 </div>
               ))}
