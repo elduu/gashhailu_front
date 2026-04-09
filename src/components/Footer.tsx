@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="bg-charcoal text-background py-16 px-4">
     <div className="container mx-auto max-w-3xl text-center">
       <h2 className="font-script text-4xl text-secondary mb-2">
-        Rediet & Partner
+        Paul & Hella
       </h2>
       <p className="font-body text-xs tracking-[0.2em] uppercase text-background/60 mb-1">
         September 15, 2026
