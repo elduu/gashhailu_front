@@ -14,6 +14,7 @@ import GuestInfo from "@/components/GuestInfo";
 import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
 
+
 const Index = () => (
   <>
     <Navbar />

@@ -20,7 +20,7 @@ const milestones = [
   {
     year: "Meskerem 21,2018 E.C.",
     title: "Our Engagement",
-    text: "Exactly ppppppppppppppppppppppppppppppppppppppppne year later, they took the next step and got engaged, celebrating a beautiful milestone that strengthened their commitment and love for one another.",
+    text: "Exactly year later, they took the next step and got engaged, celebrating a beautiful milestone that strengthened their commitment and love for one another.",
     image: story3,
   },
   {
