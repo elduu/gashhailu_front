@@ -30,7 +30,7 @@ const WeddingCalendar = () => {
       <div className="relative container mx-auto max-w-md px-4">
         <div
           ref={ref}
-          className={`transition-all duration-700 ${
+          className={`transition-opacity transition-transform duration-700 will-change-transform ${
             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`}
         >

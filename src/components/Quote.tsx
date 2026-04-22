@@ -23,7 +23,7 @@ const Quote = () => {
         }`}
       >
         <span className="font-script text-5xl md:text-6xl text-secondary leading-tight block">
-          Two souls, one heart,
+          Two souls, one one heart,
         </span>
         <span className="font-script text-5xl md:text-6xl text-secondary leading-tight block mt-2">
           one beautiful future.
