@@ -25,7 +25,7 @@ const WeddingCalendar = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImg})` }}
       />
-      <div className="absolute inset-0 bg-charcoal/80 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-charcoal/80" />
 
       <div className="relative container mx-auto max-w-md px-4">
         <div
