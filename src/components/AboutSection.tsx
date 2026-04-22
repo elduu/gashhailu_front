@@ -8,9 +8,9 @@ const AboutSection = () => {
       <div className="container mx-auto max-w-3xl">
         <div
           ref={ref}
-          className={`text-center space-y-8 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
+        className={`text-center space-y-8 transition-opacity transition-transform duration-700 will-change-transform ${
+  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+}`}
         >
           <h2 className="font-heading text-3xl md:text-4xl text-foreground">
             Dear Family And Friends
