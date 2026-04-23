@@ -22,6 +22,7 @@ export function useScrollAnimation(threshold = 0.2) {
       {
         threshold,
         rootMargin: "0px 0px -10% 0px",
+        
       }
     );
 

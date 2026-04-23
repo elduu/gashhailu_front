@@ -30,7 +30,7 @@ const Quote = () => {
         </span>
         <div className="w-16 h-px bg-secondary mx-auto mt-8" />
         <p className="font-body text-muted-foreground text-xs tracking-[0.3em] uppercase mt-6">
-          Pual & Hella
+          Paul & Hella
         </p>
       </div>
     </section>
