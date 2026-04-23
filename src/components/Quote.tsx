@@ -22,11 +22,11 @@ const Quote = () => {
           isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <span className="font-script text-5xl md:text-6xl text-secondary leading-tight block">
+        <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
          “እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።”
    
         </span>
-        <span className="font-script text-5xl md:text-6xl text-secondary leading-tight block mt-2">
+        <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
       ዘዳግም 32፥12
         </span>
         <div className="w-16 h-px bg-secondary mx-auto mt-8" />
