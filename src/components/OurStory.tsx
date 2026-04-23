@@ -8,7 +8,7 @@ const milestones = [
  {
   year: "Hamle 24, 2016 E.C.",
   title: "How I Met Her",
-  text: "My story with her began at a Christian fellowship program at the university. I met her for the first time when I was invited to preach the Word of God, while she was serving as a leader in the fellowship. From that moment, something about her stayed in my heart, and over time, my feelings for her grew into something truly special.",
+  text: "My story with her began at a Christian fellowship program at the university. I met her for the first time when I was invited to preach the Word of God, while she was serving as a leader in the fellowship. From that moment, something about her stayed in my heart, and ovver the next four years, my feelings for her grew into something truly special.",
   image: story1,
 },
 {
