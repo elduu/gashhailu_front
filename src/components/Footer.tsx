@@ -32,7 +32,8 @@ const Footer = () => (
 
       <div className="w-16 h-px bg-secondary/30 mx-auto mb-6" />
       <p className="font-body text-xs text-background/40">
-        powerd by 
+        powerd by Inviteyours
+           +251921251486
       </p>
     </div>
   </footer>

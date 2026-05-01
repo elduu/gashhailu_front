@@ -113,7 +113,7 @@ const GuestPhotos = () => {
         {/* Share Button (always visible) */}
         <div className="text-center mt-8">
           <a
-            href="https://t.me/PaulandHela_bot"
+            href="https://t.me/Tolosagudina_80th_birthdaybot"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold inline-flex items-center gap-2"
