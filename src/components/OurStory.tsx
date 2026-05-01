@@ -1,34 +1,49 @@
+
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import story1 from "@/assets/story-1.jpg";
-import story2 from "@/assets/story-2.jpg";
-import story3 from "@/assets/story-3.jpg";
-import story4 from "@/assets/story-4.jpg";
+import story1 from "@/assets/gallery-3.jpg";
+import story2 from "@/assets/gallery-11.jpg";
+import story3 from "@/assets/gallery-7.jpg";
+import story4 from "@/assets/gallery-9.jpg";
+import story5 from "@/assets/gallery-8.jpg";
+import story6 from "@/assets/gallery-14.jpg";
 
 const milestones = [
  {
-  year: "Hamle 24, 2016 E.C.",
-  title: "How We Met ",
-  text: "My story with her began at a Christian fellowship program at the university. I met her for the first time when I was invited to preach the Word of God, while she was serving as a leader in the fellowship. From that moment, something about her stayed in my heart, and ovver the next four years, my feelings for her grew into something truly special.",
-  image: story1,
-},
-{
-  year: "Meskerem 21, 2017 E.C.",
-  title: "She Said Yes",
-  text: "With courage and hope, I decided to take a step of faith and ask her to start dating. As we spent more time getting to know each other and growing closer, she said yes — a moment that filled my heart with joy and marked the beginning of our journey together.",
-  image: story2,
-},
-{
-  year: "Meskerem 21, 2018 E.C.",
-  title: "Our Engagement",
-  text: "Exactly one year later, I took another important step and we got engaged. It was a beautiful milestone that strengthened my commitment and deepened my love for her.",
-  image: story3,
-},
-{
-  year: "Tikimt 2 → Miyazya 24, 2018 E.C.",
-  title: "Shemglena & Wedding",
-  text: "On Tikimt 2, I formally sent the Shemglena request, honoring our family traditions and bringing both families together in preparation for our future. Now, with a grateful heart and deep love, I joyfully look forward to our wedding on Miyazya 24, 2018 E.C., the beginning of our lifelong journey together.",
-  image: story4,
-},
+    year: "Early Life",
+    title: "Called into Ministry",
+    text: "From an early age, Rev. Dr. Tolosa Gudina devoted his life to serving God, answering a calling that would shape his lifelong journey in ministry.",
+    image: story1,
+  },
+  {
+    year: "Academic Journey",
+    title: "Theological Education & Growth",
+    text: "He pursued higher theological studies at Uppsala University in Sweden and Fuller Theological Seminary in California, USA, earning a Master of Arts and Doctor of Missiology.",
+    image: story2,
+  },
+  {
+    year: "Ministry Service",
+    title: "Global Evangelical Impact",
+    text: "Rev. Dr. Gudina has served as an ordained minister in the Swedish Evangelical Church and has preached and led conferences across many nations, promoting reconciliation, healing, and unity.",
+    image: story3,
+  },
+  {
+    year: "Leadership & Influence",
+    title: "National & International Engagement",
+    text: "He has met and engaged with global leaders and Ethiopian national figures while contributing to large evangelical gatherings and nationwide spiritual programs for over a decade.",
+    image: story4,
+  },
+  {
+    year: "Foundations",
+    title: "Founding Ministries & Organizations",
+    text: "He is the founder of Truth in Love Gospel Ministries, Ethiopian Pastors and Their Spouses Congress, and KINN Ethiopia, impacting church leadership development.",
+    image: story5,
+  },
+  {
+    year: "Today",
+    title: "Celebrating 80 Years of Life & 59 Years of Ministry",
+    text: "Now, we joyfully celebrate his 80th birthday and nearly six decades of faithful service to the Gospel and the global Church.",
+    image: story6,
+  },
 ];
 
 const TimelineItem = ({
@@ -119,9 +134,9 @@ const OurStory = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          <span className="font-script text-3xl text-secondary">Our Love Story</span>
+          <span className="font-script text-3xl text-secondary">life Story</span>
           <h2 className="font-heading text-3xl md:text-4xl text-foreground mt-2">
-            How It All Began
+       How the Journey Started
           </h2>
           <div className="w-16 h-px bg-secondary mx-auto mt-4" />
         </div>

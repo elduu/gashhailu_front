@@ -1,30 +1,50 @@
-import { Church, UtensilsCrossed, Camera, PartyPopper, Music, UtensilsCrossedIcon } from "lucide-react";
+import {
+  Users,
+  UserCheck,
+  Mic,
+  UtensilsCrossed,
+  Camera,
+  PartyPopper,
+} from "lucide-react"; 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const schedule = [
+
+  const schedule = [
   {
-    time: "10:00 AM",
-    title: "Groom & Bride Houses",
+    time: "6:00 PM - 6:30 PM",
+    title: "Guest Arrival & Welcome",
+    icon: Users,
+    desc: "Guests arrive and are warmly welcomed at the venue",
+  },
+  {
+    time: "6:30 PM",
+    title: "Arrival of Rev. Dr. Tolosa Gudina",
+    icon: UserCheck,
+    desc: "Honored guest arrives at the ceremony",
+  },
+  {
+    time: "6:30 PM - 8:00 PM",
+    title: "Official Program",
+    icon: Mic,
+    desc: "Speeches, worship, and formal ceremony program",
+  },
+  {
+    time: "8:00 PM - 9:00 PM",
+    title: "Dinner Service",
     icon: UtensilsCrossed,
-    desc: "Morning photo sessions at both groom’s and bride’s houses",
+    desc: "Dinner is served to all guests",
   },
   {
-    time: "12:00 PM",
-    title: "Bride’s House",
-    icon: PartyPopper,
-    desc: "Guests gather and move to the bride’s house",
-  },
-  {
-    time: "2:00 PM",
-    title: "Church Ceremony",
-    icon: Church,
-    desc: "Holy matrimony ceremony at the church",
-  },
-  {
-    time: "4:00 PM",
-    title: "Cake & Photos",
+    time: "9:00 PM - 10:00 PM",
+    title: "Cake Cutting & Photo Session",
     icon: Camera,
-    desc: "Cake cutting and photo session at the church",
+    desc: "Celebration cake cutting and group photos",
+  },
+  {
+    time: "10:00 PM",
+    title: "Conclusion of Ceremony",
+    icon: PartyPopper,
+    desc: "Closing remarks and end of the event",
   },
 
 ];
@@ -42,7 +62,7 @@ const Schedule = () => {
         >
           <span className="font-script text-3xl text-secondary">The Big Day</span>
           <h2 className="font-heading text-3xl md:text-4xl text-foreground mt-2">
-            Wedding Schedule
+            Birthday Schedule
           </h2>
           <div className="w-16 h-px bg-secondary mx-auto mt-4" />
         </div>

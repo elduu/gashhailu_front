@@ -4,10 +4,10 @@ const Footer = () => (
   <footer className="bg-charcoal text-background py-16 px-4">
     <div className="container mx-auto max-w-3xl text-center">
       <h2 className="font-script text-4xl text-secondary mb-2">
-        Paul & Hella
+        የቄስ ዶ/ር ቶለሳ ጉዲና የሰማኒያ ዓመት የልደት በዓል
       </h2>
       <p className="font-body text-xs tracking-[0.2em] uppercase text-background/60 mb-1">
-        May 2, 2026
+        ሐሙስ፣ ሚያዚያ 29 / 2018 ዓ.ም
       </p>
       <p className="font-body text-xs tracking-[0.15em] text-background/50 mb-8">
         Addis Ababa, Ethiopia
@@ -32,7 +32,7 @@ const Footer = () => (
 
       <div className="w-16 h-px bg-secondary/30 mx-auto mb-6" />
       <p className="font-body text-xs text-background/40">
-        Made with ❤️ for our special day
+        powerd by 
       </p>
     </div>
   </footer>

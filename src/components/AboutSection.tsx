@@ -13,33 +13,35 @@ const AboutSection = () => {
 }`}
         >
           <h2 className="font-heading text-3xl md:text-4xl text-foreground">
-            Dear Family And Friends
+          ክቡራን ቤተሰቦች እና የተወዳጁ ጓደኞች
           </h2>
 
           <p className="font-body text-muted-foreground text-sm md:text-base italic leading-relaxed">
-            "the Lord alone guided him, no foreign god was with him."
+           “ጌታዬ እግዚአብሔር ሆይ፥ አንተ ተናግረሃልና አሁን እንግዲህ ለዘላለም በፊትህ ይሆን ዘንድ የባሪያህን ቤት፥ እባክህ፥
+            ባርክ፤ በበረከትህም የባሪያህ ቤት ለዘላለም ይባረክ።”
           </p>
 
           <p className="font-heading text-base font-semibold text-foreground">
-          Deuternomy 32:12
+         — መጽሐፈ ሳሙኤል ካልዕ 7፥29
           </p>
 
           <p className="font-body text-muted-foreground text-sm md:text-base leading-relaxed">
-            Together with our families, we joyfully invite you to celebrate our marriage on
-            <strong className="text-foreground"> 2 May 2026.</strong> The ceremony will be
-            held at the <strong className="text-foreground">BETHEL FULL GOSPEL CHURCH,</strong>
+           የቄስ ዶ/ር ቶለሳ ጉዲና የሰማኒያ ዓመት የልደት በዓል እና የሃምሳ ዘጠኝ ዓመት የወንጌል አገልግሎታቸውን
+            ለማክበር በዘጋጀነው የእራት ግብዣ ላይ እንዲገኙ በአክብሮት ጋብዘንዎታል።
+            <strong className="text-foreground"> ሐሙስ፣ ሚያዚያ 29 / 2018 ዓ.ም.</strong> ቦታ
+            <strong className="text-foreground">በአድዋ ድል የመታሰቢያ ሕንፃ</strong>
           </p>
 
           <p className="font-body text-muted-foreground text-sm md:text-base">
-            from <strong className="text-foreground">8:00 to 12:00 LT.</strong>
+            ሰዓት <strong className="text-foreground">ከምሽቱ 11:30 ሰዓት.</strong>
           </p>
 
           <p className="font-body text-muted-foreground text-sm md:text-base">
-            We would be honored to have you share this special day with us.
+          በአክብሮት ጋብዘንዎታል።
           </p>
 
           <div className="pt-4">
-            <span className="text-5xl">💍</span>
+            <span className="text-5xl"></span>
           </div>
         </div>
       </div>

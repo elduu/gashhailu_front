@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import heroBg from "@/assets/image.webp";
+
+
+
+import heroBg from "@/assets/tolosa-1.jpg";
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -7,7 +10,7 @@ const Hero = () => {
 
   useEffect(() => {
     setLoaded(true);
-    const weddingDate = new Date("2026-05-02T06:00:00").getTime();
+    const weddingDate = new Date("2026-05-07T06:00:00").getTime();
     const tick = () => {
       const now = Date.now();
       const diff = weddingDate - now;
@@ -41,17 +44,17 @@ const Hero = () => {
         }`}
       >
         <p className="text-secondary text-xs tracking-[0.4em] uppercase font-body mb-6">
-          We're getting married
+          Birthday Celebration
         </p>
         <h1 className="font-script text-5xl sm:text-7xl md:text-8xl text-background mb-4">
-          Paul & Hella
+          Rev. Dr. Tolosa Gudina
         </h1>
         <div className="w-24 h-px bg-secondary mx-auto my-6" />
         <p className="text-background/90 font-body text-sm tracking-[0.2em] uppercase mb-2">
-      May 2, 2026
+      May 7, 2026
         </p>
         <p className="text-background/70 font-body text-sm tracking-[0.15em]">
-          BETHEL FULL GOSPEL CHURCH
+          At the Adwa Victory Memorial Building
         </p>
 
         {/* Countdown */}

@@ -9,7 +9,7 @@ interface Photo {
   timestamp: string;
 }
 
-const API_URL = "https://api.paulandhella.com/api/wedding-photos";
+const API_URL = "https://api.inviteyours.com/api/wedding-photos";
 
 const GuestPhotos = () => {
   const { ref, isVisible } = useScrollAnimation();

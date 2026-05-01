@@ -1,24 +1,13 @@
 import { Navigation } from "lucide-react";
 
 const locationButtons = [
+
   {
-    label: "Groom's House",
-    icon: "🏠",
-    mapUrl:
-      "https://maps.google.com/maps?q=9.013470,38.806547&ll=9.013470,38.806547&z=16",
-  },
-  {
-    label: "Bride's House",
+    label: "Hotel",
     icon: "🏡",
-    mapUrl:
-      "https://maps.google.com/maps?q=20.820685,0.000005&ll=20.820685,0.000005&z=16",
+    mapUrl: "https://maps.app.goo.gl/prMtrL1pmuH6HaQM6?g_st=atm",
   },
-  {
-    label: "Church",
-    icon: "⛪",
-    mapUrl:
-      "https://maps.app.goo.gl/HQMDLRcDaSBEsLbv7",
-  },
+  
  
 ];
 

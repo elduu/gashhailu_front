@@ -23,15 +23,17 @@ const Quote = () => {
         }`}
       >
         <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
-         “እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።”
+“ጌታዬእግዚአብሔርሆይ፥አንተተናግረሃልናአሁንእንግዲህ
+ለዘላለም በፊትህይሆንዘንድየባሪያህንቤት፥እባክህ፥
+ባርክ፤በበረከትህም የባሪያህቤትለዘላለም ይባረክ።
    
         </span>
         <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
-      ዘዳግም 32፥12
+      መጽሐፈሳሙኤልካልዕ7፥29
         </span>
         <div className="w-16 h-px bg-secondary mx-auto mt-8" />
         <p className="font-body text-muted-foreground text-xs tracking-[0.3em] uppercase mt-6">
-          Paul & Hella
+          HAPPY BIRTHDAY
         </p>
       </div>
     </section>

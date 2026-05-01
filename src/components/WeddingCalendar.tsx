@@ -5,7 +5,7 @@ import heroImg from "@/assets/gallery-5.jpg";
 const WeddingCalendar = () => {
   const { ref, isVisible } = useScrollAnimation();
 
-  const weddingDate = new Date(2026, 4, 2); // May 3, 2026
+  const weddingDate = new Date(2026, 4, 7); // May 3, 2026
   const month = weddingDate.toLocaleString("default", { month: "long" });
   const year = weddingDate.getFullYear();
   const weddingDay = weddingDate.getDate();
@@ -38,7 +38,7 @@ const WeddingCalendar = () => {
             <h3 className="font-heading text-2xl text-center text-foreground mb-1">
               {month} {year}
             </h3>
-            <p className="font-script text-xl text-secondary text-center mb-6">Save the Date</p>
+            <p className="font-script text-xl text-secondary text-center mb-6">Birthdate</p>
 
             <div className="grid grid-cols-7 gap-1 text-center">
               {dayNames.map((d) => (
