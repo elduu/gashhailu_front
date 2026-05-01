@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="bg-charcoal text-background py-16 px-4">
     <div className="container mx-auto max-w-3xl text-center">
       <h2 className="font-script text-4xl text-secondary mb-2">
-        የቄስ ዶ/ር ቶለሳ ጉዲና የሰማኒያ ዓመት የልደት በዓል
+        የቄስ ዶ/ር ቶለሳ ጉዲና ሰማንያ ዓመት የልደት በዓል
       </h2>
       <p className="font-body text-xs tracking-[0.2em] uppercase text-background/60 mb-1">
         ሐሙስ፣ ሚያዚያ 29 / 2018 ዓ.ም

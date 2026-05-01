@@ -1,11 +1,13 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import story1 from "@/assets/gallery-3.jpg";
+
+
+import story1 from "@/assets/gallery-1.jpg";
 import story2 from "@/assets/gallery-11.jpg";
 import story3 from "@/assets/gallery-7.jpg";
 import story4 from "@/assets/gallery-9.jpg";
-import story5 from "@/assets/gallery-8.jpg";
-import story6 from "@/assets/gallery-14.jpg";
+import story5 from "@/assets/gallery-14.jpg";
+import story6 from "@/assets/gallery-6.jpg";
 
 const milestones = [
  {

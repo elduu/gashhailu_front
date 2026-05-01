@@ -46,7 +46,7 @@ const Hero = () => {
         <p className="text-secondary text-xs tracking-[0.4em] uppercase font-body mb-6">
           Birthday Celebration
         </p>
-        <h1 className="font-script text-5xl sm:text-7xl md:text-8xl text-background mb-4">
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-background mb-4 tracking-wide">
           Rev. Dr. Tolosa Gudina
         </h1>
         <div className="w-24 h-px bg-secondary mx-auto my-6" />

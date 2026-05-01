@@ -13,7 +13,7 @@ const AboutSection = () => {
 }`}
         >
           <h2 className="font-heading text-3xl md:text-4xl text-foreground">
-          ክቡራን ቤተሰቦች እና የተወዳጁ ጓደኞች
+          ክቡራት እና ክቡራን ቤተሰቦች እና የተወዳጁ ጓደኞች
           </h2>
 
           <p className="font-body text-muted-foreground text-sm md:text-base italic leading-relaxed">
@@ -26,9 +26,9 @@ const AboutSection = () => {
           </p>
 
           <p className="font-body text-muted-foreground text-sm md:text-base leading-relaxed">
-           የቄስ ዶ/ር ቶለሳ ጉዲና የሰማኒያ ዓመት የልደት በዓል እና የሃምሳ ዘጠኝ ዓመት የወንጌል አገልግሎታቸውን
-            ለማክበር በዘጋጀነው የእራት ግብዣ ላይ እንዲገኙ በአክብሮት ጋብዘንዎታል።
-            <strong className="text-foreground"> ሐሙስ፣ ሚያዚያ 29 / 2018 ዓ.ም.</strong> ቦታ
+           የቄስ ዶ/ር ቶለሳ ጉዲና የሰማንያ ዓመት የልደት በዓል እና የሃምሳ ዘጠኝ ዓመት የወንጌል አገልግሎታቸውን
+            ለማክበር ባዘጋጀነው የእራት ግብዣ ላይ እንዲገኙ በአክብሮት ጋብዘንዎታል።
+            <strong className="text-foreground"> ሐሙስ፣ ሚያዚያ 29 / 2018 ዓ.ም.</strong>
             <strong className="text-foreground">በአድዋ ድል የመታሰቢያ ሕንፃ</strong>
           </p>
 

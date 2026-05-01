@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-4">
         <a href="#home" className="font-script text-2xl text-secondary">
-          P & H
+          80th
         </a>
 
         {/* Desktop */}
