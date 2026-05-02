@@ -135,7 +135,8 @@ const RSVPForm = () => {
 
             {/* Wish */}
             <textarea
-              placeholder="Leave your wishes for the couple..."
+              placeholder="Leave your wishes for the rev. Dr 
+              Tolosa ..."
               rows={4}
               required
               value={form.wish}
