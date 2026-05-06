@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Camera } from "lucide-react";
-
 
 interface Photo {
   image_url: string;
@@ -18,12 +17,18 @@ const GuestPhotos = () => {
   const [loading, setLoading] = useState(false);
   const [showPhotos, setShowPhotos] = useState(false);
 
-  // Fetch only when button clicked
+  // 👉 MODAL + SWIPE STATE
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  const minSwipeDistance = 50;
+
+  // 👉 Fetch photos
   const fetchPhotos = async () => {
     setLoading(true);
     try {
       const res = await fetch(API_URL);
-
       if (!res.ok) throw new Error("Failed to fetch photos");
 
       const data: Photo[] = await res.json();
@@ -33,6 +38,32 @@ const GuestPhotos = () => {
       console.error("Photo fetch error:", err);
     } finally {
       setLoading(false);
+    }
+  };
+
+  // 👉 Swipe handlers
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (touchStart === null || touchEnd === null || selectedIndex === null) return;
+
+    const distance = touchStart - touchEnd;
+
+    // Swipe LEFT → next
+    if (distance > minSwipeDistance && selectedIndex < photos.length - 1) {
+      setSelectedIndex(selectedIndex + 1);
+    }
+
+    // Swipe RIGHT → prev
+    if (distance < -minSwipeDistance && selectedIndex > 0) {
+      setSelectedIndex(selectedIndex - 1);
     }
   };
 
@@ -93,7 +124,8 @@ const GuestPhotos = () => {
                 <img
                   src={photo.image_url}
                   alt={`Photo by ${photo.sender}`}
-                  className="w-full h-48 md:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                  onClick={() => setSelectedIndex(i)}
+                  className="w-full h-48 md:h-56 object-cover transition-transform duration-500 group-hover:scale-110 cursor-pointer"
                   loading="lazy"
                 />
 
@@ -110,7 +142,7 @@ const GuestPhotos = () => {
           </div>
         )}
 
-        {/* Share Button (always visible) */}
+        {/* Share Button */}
         <div className="text-center mt-8">
           <a
             href="https://t.me/Tolosagudina_80th_birthdaybot"
@@ -123,6 +155,63 @@ const GuestPhotos = () => {
           </a>
         </div>
       </div>
+
+      {/* ================= MODAL ================= */}
+      {selectedIndex !== null && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center"
+          onClick={() => setSelectedIndex(null)}
+        >
+          <div
+            className="relative w-full h-full flex items-center justify-center p-4"
+            onClick={(e) => e.stopPropagation()}
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
+            {/* Image */}
+            <img
+              key={photos[selectedIndex].image_url}
+              src={photos[selectedIndex].image_url}
+              alt="Preview"
+              className="max-h-full max-w-full object-contain rounded-lg transition-all duration-300"
+            />
+
+            {/* Close */}
+            <button
+              onClick={() => setSelectedIndex(null)}
+              className="absolute top-4 right-4 text-white bg-black/60 px-3 py-1 rounded"
+            >
+              ✕
+            </button>
+
+            {/* Prev */}
+            {selectedIndex > 0 && (
+              <button
+                onClick={() => setSelectedIndex(selectedIndex - 1)}
+                className="absolute left-4 text-white bg-black/60 px-3 py-2 rounded"
+              >
+                ‹
+              </button>
+            )}
+
+            {/* Next */}
+            {selectedIndex < photos.length - 1 && (
+              <button
+                onClick={() => setSelectedIndex(selectedIndex + 1)}
+                className="absolute right-4 text-white bg-black/60 px-3 py-2 rounded"
+              >
+                ›
+              </button>
+            )}
+
+            {/* Sender */}
+            <p className="absolute bottom-6 text-white text-sm opacity-80">
+              {photos[selectedIndex].sender || "Guest"}
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

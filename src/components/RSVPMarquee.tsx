@@ -46,9 +46,18 @@ const RSVPMarquee = () => {
               className="flex-shrink-0 w-64 bg-muted/50 border border-secondary/20 rounded-xl p-5 shadow-sm"
             >
               <p className="font-heading text-sm text-foreground mb-2">{item.name}</p>
-              <p className="font-body text-xs text-muted-foreground leading-relaxed italic">
-                "{item.wish}"
-              </p>
+            <p
+    className="font-body text-xs text-muted-foreground italic overflow-hidden leading-[1.4]"
+    style={{
+      display: "-webkit-box",
+      WebkitLineClamp: 3,
+      WebkitBoxOrient: "vertical",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+    }}
+  >
+    "{item.wish}"
+  </p>
             </div>
           ))}
         </div>

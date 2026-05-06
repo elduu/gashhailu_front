@@ -3,16 +3,19 @@ import { Instagram, MessageCircle, Phone } from "lucide-react";
 const Footer = () => (
   <footer className="bg-charcoal text-background py-16 px-4">
     <div className="container mx-auto max-w-3xl text-center">
-      <h2 className="font-script text-4xl text-secondary mb-2">
+      <h2 className="font-script text-2xl text-secondary mb-1">
         የቄስ ዶ/ር ቶለሳ ጉዲና ሰማንያ ዓመት የልደት በዓል
       </h2>
+
       <p className="font-body text-xs tracking-[0.2em] uppercase text-background/60 mb-1">
         ሐሙስ፣ ሚያዚያ 29 / 2018 ዓ.ም
       </p>
+
       <p className="font-body text-xs tracking-[0.15em] text-background/50 mb-8">
         Addis Ababa, Ethiopia
       </p>
 
+      {/* Social Icons */}
       <div className="flex justify-center gap-6 mb-8">
         {[
           { icon: Instagram, label: "Instagram" },
@@ -31,10 +34,35 @@ const Footer = () => (
       </div>
 
       <div className="w-16 h-px bg-secondary/30 mx-auto mb-6" />
-      <p className="font-body text-xs text-background/40">
-        powerd by Inviteyours
-           +251921251486
-      </p>
+
+      {/* Branding */}
+      <div className="text-center space-y-1">
+        <p className="font-body text-sm text-background/70">
+          Digital Invitation Platform
+        </p>
+
+        <p className="font-body text-xs text-background/40">
+          Powered by <span className="text-secondary">InviteYours</span>
+        </p>
+
+        {/* Website */}
+        <a
+          href="https://www.inviteyours.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-xs text-background/40 hover:text-secondary transition"
+        >
+          www.inviteyours.com
+        </a>
+
+        {/* Phone */}
+        <a
+          href="tel:+251921251486"
+          className="block text-xs text-background/40 hover:text-secondary transition"
+        >
+          +251 921 251 486
+        </a>
+      </div>
     </div>
   </footer>
 );
