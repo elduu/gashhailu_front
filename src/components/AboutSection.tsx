@@ -50,18 +50,11 @@ const AboutSection = () => {
           </div>
 
           {/* Amharic Heading */}
-          <h2 className="font-heading text-3xl md:text-4xl text-foreground leading-relaxed">
-            90 ዓመት የተባረከ የሕይወት ጉዞ
-          </h2>
-
+        
           {/* Amharic Content */}
           <p className="font-body text-muted-foreground text-sm md:text-base leading-loose">
             በታላቅ ደስታና በምስጋና፣
             የተወደዱ አባታችን፣ አያታችንና ሽማግሌያችን
-          </p>
-
-          <p className="font-heading text-2xl md:text-4xl font-bold text-primary leading-relaxed">
-            ክቡር ጋሼ ኃይሉ ቅጤሳ
           </p>
 
           <p className="font-body text-muted-foreground text-sm md:text-base leading-loose">
@@ -70,7 +63,7 @@ const AboutSection = () => {
           </p>
 
           <p className="font-body text-muted-foreground text-sm md:text-base italic leading-relaxed">
-            በእምነት፣ በጥበብ፣ በፍቅርና በታሪክ የተሞላ 90 ዓመት።
+            
           </p>
 
           {/* Shared Event Details */}

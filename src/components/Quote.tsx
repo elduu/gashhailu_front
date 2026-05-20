@@ -23,13 +23,11 @@ const Quote = () => {
         }`}
       >
         <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
-“ጌታዬእግዚአብሔርሆይ፥አንተተናግረሃልናአሁንእንግዲህ
-ለዘላለም በፊትህይሆንዘንድየባሪያህንቤት፥እባክህ፥
-ባርክ፤በበረከትህም የባሪያህቤትለዘላለም ይባረክ።
+በእምነት፣ በጥበብ፣ በፍቅርና በታሪክ የተሞላ 90 ዓመት።
    
         </span>
         <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
-      መጽሐፈሳሙኤልካልዕ7፥29
+     ክቡር ጋሼ ኃይሉ ቅጤሳ
         </span>
         <div className="w-16 h-px bg-secondary mx-auto mt-8" />
         <p className="font-body text-muted-foreground text-xs tracking-[0.3em] uppercase mt-6">
