@@ -5,7 +5,7 @@ const locationButtons = [
   {
     label: "Hotel",
     icon: "🏡",
-    mapUrl: "https://maps.app.goo.gl/prMtrL1pmuH6HaQM6?g_st=atm",
+    mapUrl: "https://maps.app.goo.gl/61oW19Dj3gnbF7nY9?g_st=ac",
   },
   
  
