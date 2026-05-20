@@ -54,13 +54,11 @@ const AboutSection = () => {
           {/* Amharic Content */}
           <p className="font-body text-muted-foreground text-sm md:text-base leading-loose">
             በታላቅ ደስታና በምስጋና፣
-            የተወደዱ አባታችን፣ አያታችንና ሽማግሌያችን
-          </p>
-
-          <p className="font-body text-muted-foreground text-sm md:text-base leading-loose">
-            90ኛ የልደት በዓላቸውን ከእኛ ጋር በመሆን
+            የተወደዱ አባታችን፣ አያታችንና ሽማግሌያችን 90ኛ የልደት በዓላቸውን ከእኛ ጋር በመሆን
             እንዲያከብሩ በክብር እንጋብዛለን።
           </p>
+
+  
 
           <p className="font-body text-muted-foreground text-sm md:text-base italic leading-relaxed">
             
