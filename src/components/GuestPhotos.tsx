@@ -8,7 +8,7 @@ interface Photo {
   timestamp: string;
 }
 
-const API_URL = "https://api.inviteyours.com/api/wedding-photos";
+const API_URL = "https://apigashe.inviteyours.com/api/wedding-photos";
 
 const GuestPhotos = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -145,7 +145,7 @@ const GuestPhotos = () => {
         {/* Share Button */}
         <div className="text-center mt-8">
           <a
-            href="https://t.me/Tolosagudina_80th_birthdaybot"
+            href="https://t.me/Gashe_HAILU_KITESSA_bot"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold inline-flex items-center gap-2"

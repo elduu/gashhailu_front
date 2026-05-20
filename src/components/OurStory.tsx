@@ -2,49 +2,49 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 
-import story1 from "@/assets/gallery-1.jpg";
-import story2 from "@/assets/gallery-11.jpg";
-import story3 from "@/assets/gallery-7.jpg";
-import story4 from "@/assets/gallery-9.jpg";
-import story5 from "@/assets/gallery-14.jpg";
-import story6 from "@/assets/gallery-6.jpg";
+// import story1 from "@/assets/gallery-1.jpg";
+// import story2 from "@/assets/gallery-11.jpg";
+// import story3 from "@/assets/gallery-7.jpg";
+// import story4 from "@/assets/gallery-9.jpg";
+// import story5 from "@/assets/gallery-14.jpg";
+// import story6 from "@/assets/gallery-6.jpg";
 
 const milestones = [
  {
     year: "Early Life",
     title: "Called into Ministry",
     text: "From an early age, Rev. Dr. Tolosa Gudina devoted his life to serving God, answering a calling that would shape his lifelong journey in ministry.",
-    image: story1,
+    // image: story1,
   },
   {
     year: "Academic Journey",
     title: "Theological Education & Growth",
     text: "He pursued higher theological studies at Uppsala University in Sweden and Fuller Theological Seminary in California, USA, earning a Master of Arts and Doctor of Missiology.",
-    image: story2,
+    // image: story2,
   },
   {
     year: "Ministry Service",
     title: "Global Evangelical Impact",
     text: "Rev. Dr. Gudina has served as an ordained minister in the Swedish Evangelical Church and has preached and led conferences across many nations, promoting reconciliation, healing, and unity.",
-    image: story3,
+    // image: story3,
   },
   {
     year: "Leadership & Influence",
     title: "National & International Engagement",
     text: "He has met and engaged with global leaders and Ethiopian national figures while contributing to large evangelical gatherings and nationwide spiritual programs for over a decade.",
-    image: story4,
+    // image: story4,
   },
   {
     year: "Foundations",
     title: "Founding Ministries & Organizations",
     text: "He is the founder of Truth in Love Gospel Ministries, Ethiopian Pastors and Their Spouses Congress, and KINN Ethiopia, impacting church leadership development.",
-    image: story5,
+    // image: story5,
   },
   {
     year: "Today",
     title: "Celebrating 80 Years of Life & 59 Years of Ministry",
     text: "Now, we joyfully celebrate his 80th birthday and nearly six decades of faithful service to the Gospel and the global Church.",
-    image: story6,
+    // image: story6,
   },
 ];
 

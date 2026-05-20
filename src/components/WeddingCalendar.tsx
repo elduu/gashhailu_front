@@ -5,7 +5,7 @@ import heroImg from "@/assets/gallery-5.jpg";
 const WeddingCalendar = () => {
   const { ref, isVisible } = useScrollAnimation();
 
-  const weddingDate = new Date(2026, 4, 7); // May 3, 2026
+  const weddingDate = new Date(2026, 4, 30); // May 3, 2026
   const month = weddingDate.toLocaleString("default", { month: "long" });
   const year = weddingDate.getFullYear();
   const weddingDay = weddingDate.getDate();

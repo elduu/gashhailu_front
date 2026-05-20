@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 
 
-import heroBg from "@/assets/tolosa-1.jpg";
+import heroBg from "@/assets/gallery-1.jpg";
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -10,7 +10,7 @@ const Hero = () => {
 
   useEffect(() => {
     setLoaded(true);
-    const weddingDate = new Date("2026-05-07T06:00:00").getTime();
+    const weddingDate = new Date("2026-05-30T06:00:00").getTime();
     const tick = () => {
       const now = Date.now();
       const diff = weddingDate - now;
@@ -47,14 +47,14 @@ const Hero = () => {
           Birthday Celebration
         </p>
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-background mb-4 tracking-wide">
-          Rev. Dr. Tolosa Gudina
+         Honorable Gashe HAILU KITESSA
         </h1>
         <div className="w-24 h-px bg-secondary mx-auto my-6" />
         <p className="text-background/90 font-body text-sm tracking-[0.2em] uppercase mb-2">
-      May 7, 2026
+      May 30, 2026
         </p>
         <p className="text-background/70 font-body text-sm tracking-[0.15em]">
-          At the Adwa Victory Memorial Building
+          At the Akkoo Coffee Bishoftu Branch
         </p>
 
         {/* Countdown */}

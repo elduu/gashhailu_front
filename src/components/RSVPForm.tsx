@@ -3,7 +3,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Heart } from "lucide-react";
 
 const API_URL =
-  "https://api.inviteyours.com/api/rsvp";
+  "https://apigashe.inviteyours.com/api/rsvp";
 
 const RSVPForm = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -135,8 +135,7 @@ const RSVPForm = () => {
 
             {/* Wish */}
             <textarea
-              placeholder="Leave your wishes for the rev. Dr 
-              Tolosa ..."
+              placeholder="Leave your wishes for the Gashe HAILU KITESSA ..."
               rows={4}
               required
               value={form.wish}
