@@ -23,11 +23,12 @@ const Quote = () => {
         }`}
       >
         <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
-በእምነት፣ በጥበብ፣ በፍቅርና በታሪክ የተሞላ 90 ዓመት።
+እግዚአብሔር ቸር፣ ምሕረቱም ለዘላለም ነውና፤
+ታማኝነቱም ከትውልድ እስከ ትውልድ ነው
    
         </span>
         <span className="font-script text-2xl md:text-3xl text-secondary leading-tight block">
-     ክቡር ጋሼ ኃይሉ ቅጤሳ
+    መዝሙረ ዳዊት 100:5
         </span>
         <div className="w-16 h-px bg-secondary mx-auto mt-8" />
         <p className="font-body text-muted-foreground text-xs tracking-[0.3em] uppercase mt-6">

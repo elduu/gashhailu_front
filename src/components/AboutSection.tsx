@@ -77,7 +77,7 @@ const AboutSection = () => {
             <p className="font-body text-muted-foreground text-sm md:text-base">
               Time / ሰዓት{" "}
               <strong className="text-foreground">
-                12:00 Noon — ከቀኑ 6:00 ሰአት
+                11:00 AM — ከቀኑ 5:00 ሰአት
               </strong>
             </p>
 
