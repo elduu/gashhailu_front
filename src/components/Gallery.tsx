@@ -16,12 +16,27 @@ import g12 from "@/assets/gallery-12.jpg";
 import g13 from "@/assets/gallery-13.jpg";
 import g14 from "@/assets/gallery-14.jpg";
 import g15 from "@/assets/gallery-15.jpg";
+import g16 from "@/assets/gallery-16.jpg";
+import g17 from "@/assets/gallery-17.jpg";
+import g18 from "@/assets/gallery-18.jpg";
+import g19 from "@/assets/gallery-19.jpg";
+import g20 from "@/assets/gallery-20.jpg";
+import g21 from "@/assets/gallery-21.jpg";
+import g22 from "@/assets/gallery-22.jpg";
+import g23 from "@/assets/gallery-23.jpg";
+import g24 from "@/assets/gallery-24.jpg";
+import g25 from "@/assets/gallery-25.jpg";
+import g26 from "@/assets/gallery-26.jpg";
+import g27 from "@/assets/gallery-27.jpg";
+import g28 from "@/assets/gallery-28.jpg";
+import g29 from "@/assets/gallery-29.jpg";
+import g30 from "@/assets/gallery-30.jpg";
 // import g16 from "@/assets/gallery-16.jpg";
 // import g17 from "@/assets/gallery-17.jpg";
 // import g18 from "@/assets/gallery-18.jpg";
 // import g19 from "@/assets/gallery-19.jpg";
 
-const images = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13, g14, g15];
+const images = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19, g20, g21, g22, g23, g24, g25, g26, g27, g28, g29, g30];
 
 const Gallery = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);

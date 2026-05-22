@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 
 
-import heroBg from "@/assets/gallery-1.jpg";
+import heroBg from "@/assets/gallery-17.jpg";
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -30,12 +30,18 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
-        src={heroBg}
-        alt="Rediet and Partner"
-        width={1920}
-        height={1280}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+  src={heroBg}
+  alt="rediet"
+  width={1920}
+  height={1280}
+ className="
+absolute inset-0
+w-full h-full
+object-cover
+object-center
+md:object-center
+"
+/>
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/50 to-charcoal/70" />
 
       <div
