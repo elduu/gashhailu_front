@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 
 
-import heroBg from "@/assets/hero.jpg";
+import heroBg from "@/assets/gallery-17.jpg";
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
