@@ -1,5 +1,5 @@
 import { Navigation } from "lucide-react";
-
+import map from "@/assets/image.png"
 const locationButtons = [
 
   {
@@ -18,14 +18,10 @@ const Events = () => {
 
         {/* Google Map */}
         <div className="rounded-xl overflow-hidden shadow-lg border border-secondary/20">
-       <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.226083559722!2d38.9427656!3d8.764787499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b72d3c27674db%3A0x989f05740e4beeb1!2sQW7V%2BW46%2C%20Bishoftu!5e0!3m2!1sen!2set!4v1780122806835!5m2!1sen!2set"
-    height="350"
-    style={{ border: 0 }}
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    title="Hotel Location"
+      <img
+    src={map}
+    alt="Hotel Location Map"
+    className="w-full h-[350px] object-cover"
   />
         </div>
         
